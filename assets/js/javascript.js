@@ -3,7 +3,7 @@ function MiembroSquad(nombreApellido, edad, hobbies){
 	this.edad = edad;
 	this.hobbies = hobbies;
 	this.mostrar = function(){
-		return ("<b>Nombre: </b>" + "<i>" + this.nombreApellido + "</i>" + "<br>" + "<b>Edad: </b>" + this.edad + "<br>" + "<b>Hobbies: </b>" + this.hobbies)
+		return ("<ul><li>" + "<b>Nombre: </b>" + "<i>" + this.nombreApellido + "</i>" + "<br>" + "<b>Edad: </b>" + this.edad + " años" + "<br>" + "<b>Hobbies: </b>" + this.hobbies + "</li></ul>")
 	}
 }
 
@@ -23,4 +23,13 @@ function imprimir(){
 	var paty = new MiembroSquad("Patricia Zavala", 28, "Cantar");
 	var compa4 = document.getElementById("compa4");
 	compa4.innerHTML = paty.mostrar();
+
+	var angela = new MiembroSquad("Angela Aliaga", 32, "Leer, escuchar música y jugar Donkey Kong Country");
+	var compa5 = document.getElementById("compa5");
+	compa5.innerHTML = angela.mostrar();
+
+	var dany = new MiembroSquad("Daniela Risco", 35, "Ver películas");
+	var compa6 = document.getElementById("compa6");
+	compa6.innerHTML = dany.mostrar();
+
 }
